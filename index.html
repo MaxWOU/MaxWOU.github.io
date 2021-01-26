@@ -45,7 +45,7 @@
         </h1>
         <img class="my-pro" id="my-pro" src="/resources/images/profile_picture.jpg" />
 
-        <button class="ui linkedin large button green" onclick="location.href='@Url.Action("Download", "Home", routeValues: new { fileName = "resume.pdf" })'">
+        <button class="ui linkedin large button green" href="/resume">
             <i class="file pdf icon"></i>
             Resume
         </button>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-md-4">
             <h2>About Me</h2>
-            <p>@ViewBag.about_me_string</p>
+            <p>I am currently looking for work which is related to fullstack development. I'm billiant in ASP.NET and C#.</p>
         </div>
         <div class="col-md-4">
             <h2>My Letters of Recommendation</h2>
