@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Portfolio</title>
+	<title>Stoyanov Maksim</title>
 	<!-- css files -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
@@ -12,42 +12,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 	<body>
-		<!-- Navbar -->
-		<nav class="nav container void-background">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<a href="http://medium.com/@hassanhelfi/" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-medium"></i>
-					</span>
-				</a>
-				<a href="http://github.com/helfi92" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-github"></i>
-					</span>
-				</a>
-				<a href="https://twitter.com/hassanhelfi" class="nav-item">
-					<span class="icon">
-						<i class="fa fa-twitter"></i>
-					</span>
-				</a>				
-			</div>
+		<div class="ui massive blue five item inverted borderless stackable menu">
 
-			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#about">About</a>
-				<a class="nav-item" href="#projects">Projects</a>
-				<a class="nav-item" href="#social">Social</a>
-			</div>
+        <a class="item header" href="~/Home/">
+            <i class="home icon"></i><b>Home</b>
+        </a>
+        <a class="item header" href="~/Project/">
+            <i class="road icon"></i><b>Projects</b>
+        </a>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
+        <a class="item header" onclick="email()">
+            <i class="envelope icon"></i><b>Contact Me</b>
+        </a>
+
+        <a class="item header" href="~/Letters/">
+            <i class="copy outline icon"></i><b>Certifications & Letters of Recommendation</b>
+        </a>
+
+        <a class="item header" href="/resources/files/Download?fileName=Maksim_Stoyanov_Resume.pdf">
+            <i class="file pdf icon"></i><b>Download Resume</b>
+        </a>
+    </div>
+	
+	
+	<div class="ui basic mini modal center-aligned-modal">
+        <form action="https://formspree.io/f/xknpjooe" method="POST" class="ui form" id="emailForm" style="text-align: center; padding-top: 45%">
+            <div class="content">
+                <div class="field">
+                    <h3 style="color: white;">Your Email</h3>
+                    <input type="text" name="_replyto" placeholder="Email">
+                </div>
+                <div class="field">
+                    <h3 style="color: white;">Message</h3>
+                    <textarea type="text" name="message" placeholder="Your inquiry"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="actions">
+                <div class="ui red deny button">
+                    Scrap
+                </div>
+                <div class="ui positive right labeled icon button" onclick="submitForm()">
+                    Send
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
 				
 		<!-- About Me -->
 		<section id="about" class="section section-1">
@@ -59,6 +73,7 @@
 				<p class="intro">
 					Lorem Khaled Ipsum is a major key to success. To succeed you must believe. When you believe, you will succeed. Mogul talk. Find peace, life is like a water fall, you’ve gotta flow. Lion! Fan luv. Eliptical talk.
 				</p>
+				<div class="ui loading succseed">BUTTON RED</div>
 			</div>
 		</section>
 		
@@ -131,6 +146,22 @@
 		</section>
 		
 		<!-- Scripts  -->
-		<script src="controller.js"></script>		
+		<script src="controller.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>		
+		
+		
+		<!--Modal Scripts--->
+		<script>
+			function email() {
+				$('.ui.basic.modal')
+					.modal('show')
+					;
+			}
+			function submitForm() {
+				document.getElementById("emailForm").submit(); 
+			}
+		</script>
 	</body>	
 </html>
