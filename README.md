@@ -1,11 +1,40 @@
-# Draco
-A free PSD & HTML resume template.
-See the demo [here](http://draco.afnizarnur.com/) and download the latest release [here](https://github.com/afnizarnur/draco/releases).
-![Draco](https://cloud.githubusercontent.com/assets/4648648/26038614/72fe3772-3936-11e7-8f88-3781aea67bdc.png)
+# Studorlio
+
+Studorlio is a template for your own personal site. You can have yours running on the cloud in exactly 10 seconds. But first, make sure you have a GitHub account. Ready, set, go!
+
+![Display Image](https://raw.githubusercontent.com/helfi92/studorlio/master/assets/img/studorlio.png)
+
+## Getting Started
+1. Fork the repository to make it yours.
+2. Rename the forked repository to `username.github.io`, where `username` is your GitHub username.
+3. That's it! Navigate to `username.github.io` to see your website :) 
+
+If this is your first time making a website and is having trouble getting started, that's ok. Head over to the [FAQ](#faq) section and let me try help you.
+
+## Demo
+[http://www.hassanali.me/studorlio/](http://www.hassanali.me/studorlio/)
+
+## FAQ
+* [How do I fork this repository?](#how-do-i-fork-this-repository)
+* [How do I rename the forked repository?](#how-do-i-rename-the-forked-repository)
+* [How do I run the portfolio locally?](#how-do-i-run-the-portfolio-locally)
+
+### How do I fork this repository?
+1. Make sure you're logged into GitHub with your account
+2. Click the Fork button on the upper right-hand side of this page
+
+### How do I rename the forked repository?
+1. Navigate to the main page of the repository. It should be `https://github.com/username/studorlio/`, where `username` is your GitHub username
+2. Click Settings
+3. Under the Repository name heading, type `username.github.io` then click Rename
+
+### How do I run the portfolio locally?
+1. Right click (Windows) or double click (Mac) `index.html` and select "Open with"
+2. Pick your browser of choice
+
+## Bugs and Issues
+Have a bug or an issue with this template? [Open a new issue](https://github.com/helfi92/studorlio/issues)
 
 ## License
-<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+Code released under the [MIT](https://github.com/helfi92/studorlio/blob/master/LICENSE) license
 
-Draco is licensed under Creative Commons [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Which means that you are free to copy and redistribute the material in any medium or format and remix, transform, and build upon the material.
-
-This template is designed and developed by Afnizar Nur Ghifari.
