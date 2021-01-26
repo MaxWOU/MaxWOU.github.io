@@ -10,7 +10,7 @@ $(document).ready(function () {
     setInterval('cursorAnimation()', 600);
     captionEl = $('#caption');
 
-    if the page is homepage it'll show my First Name
+    //if the page is homepage it'll show my First Name
     if (what_page != null)
     {
         caption = Maksim Stoyanov;
