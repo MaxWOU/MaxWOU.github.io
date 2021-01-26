@@ -10,13 +10,13 @@ $(document).ready(function () {
     setInterval('cursorAnimation()', 600);
     captionEl = $('#caption');
 
-    
+    //if the page is homepage it'll show my First Name
     if (what_page != null)
     {
-        caption = Maksim Stoyanov;
-    } else  
+        caption = "Maksim Stoyanov";
+    } else // else show Projects
     {
-        caption = Projects;
+        caption = "Projects";
     }
    
     type();
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
-    if (captionLength  caption.length + 1) {
+    if (captionLength < caption.length + 1) {
         setTimeout('type()', 220);
     } else {
         captionLength = 0;
@@ -36,12 +36,10 @@ function type() {
 
 function cursorAnimation() {
     $('#cursor').animate({
-        opacity 0
+        opacity: 0
     }, 'fast', 'swing').animate({
-        opacity 1
+        opacity: 1
     }, 'fast', 'swing');
 }
-
-
 
 
