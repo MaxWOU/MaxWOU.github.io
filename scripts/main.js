@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
-    if (captionLength < caption.length + 1) {
+    if (captionLength < caption.length) {
         setTimeout('type()', 220);
     } else {
         captionLength = 0;
