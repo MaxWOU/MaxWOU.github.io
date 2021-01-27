@@ -16,7 +16,7 @@ $(document).ready(function () {
         caption = "Maksim Stoyanov";
     } else // else show Projects
     {
-        caption = "Projects";
+        caption = "My Projects";
     }
    
     type();
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
-    if (captionLength < caption.length) {
+    if (captionLength < caption.length + 1) {
         setTimeout('type()', 220);
     } else {
         captionLength = 0;
