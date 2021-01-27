@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Stoyanov Maksim</title>
+	<title>Stoyanov Documents</title>
 	<!-- css files -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">	
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-	<meta name="author" content="Hassan Ali">
+	<meta name="author" content="Maksim Stoyanov">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-	<body>
+	<body  style="background-image: linear-gradient(to right top, #dddddd, #e3e3e3, #e9e9e9, #f0f0f0, #f6f6f6, #f6f6f6, #f6f6f6, #f6f6f6, #f0f0f0, #e9e9e9, #e3e3e3, #dddddd);">
 	<div class="ui massive blue five item inverted borderless stackable menu">
 
         <a class="item header" href="/index">
@@ -35,33 +35,7 @@
     </div>
 	
 	
-	<div class="ui basic mini modal center-aligned-modal">
-        <form action="https://formspree.io/f/xknpjooe" method="POST" class="ui form" id="emailForm" style="text-align: center; padding-top: 45%">
-            <div class="content">
-                <div class="field">
-                    <h3 style="color: white;">Your Email</h3>
-                    <input type="text" name="_replyto" placeholder="Email">
-                </div>
-                <div class="field">
-                    <h3 style="color: white;">Message</h3>
-                    <textarea type="text" name="message" placeholder="Your inquiry"></textarea>
-                </div>
-            </div>
-            <br>
-            <div class="actions">
-                <div class="ui red deny button">
-                    Scrap
-                </div>
-                <div class="ui positive button" onclick="submitForm()">
-                    Send
-                    <i class="checkmark icon"></i>
-                </div>
-            </div>
-
-
-        </form>
-
-    </div>
+	
 				
 		<!-- About Me -->
 		<section id="about" class="section section-1">
@@ -151,6 +125,35 @@
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
 		<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>		
 		
+		<!--modal-->
+   <div class="ui basic mini modal center-aligned-modal">
+        <form action="https://formspree.io/f/xknpjooe" method="POST" class="ui form" id="emailForm" style="text-align: center; padding-top: 45%">
+            <div class="content">
+                <div class="field">
+                    <h3 style="color: white;">Your Email</h3>
+                    <input type="text" name="_replyto" placeholder="Email">
+                </div>
+                <div class="field">
+                    <h3 style="color: white;">Message</h3>
+                    <textarea type="text" name="message" placeholder="Your inquiry"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="actions">
+                <div class="ui red deny button">
+                    Scrap
+                </div>
+                <div class="ui positive button" onclick="submitForm()">
+                    Send
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+
 		
 		<!--Modal Scripts--->
 		<script>
@@ -163,5 +166,7 @@
 				document.getElementById("emailForm").submit(); 
 			}
 		</script>
+		<!--eof_modal-->
+
 	</body>	
 </html>
