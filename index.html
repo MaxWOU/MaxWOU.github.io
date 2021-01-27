@@ -270,7 +270,7 @@
 
 
 <!--modal-->
-   <div class="ui basic mini modal center-aligned-modal">
+    <div class="ui basic mini modal center-aligned-modal">
         <form action="https://formspree.io/f/xknpjooe" method="POST" class="ui form" id="emailForm" style="text-align: center; padding-top: 45%">
             <div class="content">
                 <div class="field">
@@ -287,18 +287,15 @@
                 <div class="ui red deny button">
                     Scrap
                 </div>
-                <div class="ui positive button" onclick="submitForm()">
-                    Send
-                    <i class="checkmark icon"></i>
-                </div>
+                <div onclick="submitForm()" class="ui positive button">
+					Send
+				</div>
             </div>
 
 
         </form>
 
     </div>
-
-		
 		<!--Modal Scripts--->
 		<script>
 			function email() {
