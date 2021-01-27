@@ -43,8 +43,58 @@
 </object>
 	</div>
 	
-</body>
+	
+	<!--modal -->
+    <div class="ui basic mini modal center-aligned-modal">
+        <form action="https://formspree.io/f/xknpjooe" method="POST" class="ui form" id="emailForm" style="text-align: center; padding-top: 45%">
+            <div class="content">
+                <div class="field">
+                    <h3 style="color: white;">Your Email</h3>
+                    <input type="text" name="_replyto" placeholder="Email">
+                </div>
+                <div class="field">
+                    <h3 style="color: white;">Message</h3>
+                    <textarea type="text" name="message" placeholder="Your inquiry"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="actions">
+                <div class="ui red deny button">
+                    Scrap
+                </div>
+                <div class="ui positive right labeled icon button" onclick="submitForm()">
+                    Send
+                    <i class="checkmark icon"></i>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+<!-- eof modal-->
+<!--modal scripts-->
+<script>
+    function email() {
+        $('.ui.basic.modal')
+            .modal('show')
+            ;
+    }
+
+    function submitForm() {
+        document.getElementById("emailForm").submit(); 
+    }
+
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>		
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>	
+
+<script src="/scripts/main.js"></script>
+    <script>
+        $('.ui.sticky').sticky();
+    </script>	
+</body>
+
 </html>
